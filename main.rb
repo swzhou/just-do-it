@@ -1,13 +1,15 @@
 require 'sinatra'
 require 'slim'
+require './domain'
 
 get '/' do
+  @tasks = Task.all
   slim :index
 end
 
 post '/' do
-  @task = params[:task]
-  slim :task
+  Task.create params[:task]
+  redirect to('/')
 end
 
 get '/:task' do
