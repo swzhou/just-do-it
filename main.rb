@@ -17,6 +17,13 @@ delete '/task/:id' do
   redirect to('/')
 end
 
+put '/task/:id' do
+  task = Task.get params[:id]
+  task.completed_at = task.completed_at.nil? ? Time.now : nil
+  task.save
+  redirect to('/')
+end
+
 get '/:task' do
   @task = params[:task].split('-').join(' ').capitalize
   slim :task
