@@ -3,7 +3,7 @@ require 'slim'
 require './domain'
 
 get '/' do
-  @tasks = Task.all
+  @lists = List.all(:order => [:name])
   slim :index
 end
 
@@ -21,6 +21,16 @@ put '/task/:id' do
   task = Task.get params[:id]
   task.completed_at = task.completed_at.nil? ? Time.now : nil
   task.save
+  redirect to('/')
+end
+
+post '/new/list' do
+  List.create params['list']
+  redirect to('/')
+end
+
+delete '/list/:id' do
+  List.get(params[:id]).destroy
   redirect to('/')
 end
 
