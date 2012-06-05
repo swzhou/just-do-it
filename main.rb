@@ -7,8 +7,8 @@ get '/' do
   slim :index
 end
 
-post '/' do
-  Task.create params[:task]
+post '/:id' do
+  List.get(params[:id]).tasks.create params['task']
   redirect to('/')
 end
 

@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>views/list.slim</string>
+	<string>views/index.slim</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -42,7 +42,7 @@
 				<key>column</key>
 				<integer>3</integer>
 				<key>line</key>
-				<integer>7</integer>
+				<integer>12</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -68,9 +68,9 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>0</integer>
+				<integer>27</integer>
 				<key>line</key>
-				<integer>36</integer>
+				<integer>9</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -84,7 +84,21 @@
 				<key>column</key>
 				<integer>37</integer>
 				<key>line</key>
-				<integer>5</integer>
+				<integer>2</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>views/layout.slim</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>15</integer>
+				<key>line</key>
+				<integer>4</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -110,9 +124,9 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>66</integer>
+				<integer>31</integer>
 				<key>line</key>
-				<integer>0</integer>
+				<integer>5</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -125,6 +139,7 @@
 		<string>main.rb</string>
 		<string>views/list.slim</string>
 		<string>views/task.slim</string>
+		<string>views/layout.slim</string>
 		<string>public/styles.css</string>
 		<string>views/index.slim</string>
 		<string>domain.rb</string>
@@ -160,6 +175,6 @@
 		</dict>
 	</dict>
 	<key>windowFrame</key>
-	<string>{{201, -178}, {879, 707}}</string>
+	<string>{{553, 62}, {879, 707}}</string>
 </dict>
 </plist>
